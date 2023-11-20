@@ -12,7 +12,7 @@ jobs:
       - name: Install dependencies
         run: npm ci
       - name: Install Playwright
-        run: npx playwright install --with-deps firefox
+        run: npx playwright install --with-deps chromium
       - name: Run tests
         run: npx playwright test
         env:
